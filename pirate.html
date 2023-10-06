@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <style>
+
+        h1 {
+
+            background-color: orangered;
+
+            animation: blinker 1s linear infinite;
+
+            width: 62%;
+
+            border: 2px solid green;
+
+        }
+
+    </style>
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+
+       
+ 
+
+    <title>Web Apps Assignment07</title>
+
+</head>
+
+ 
+
+<body>
+
+    <h1>Find the treasure by Vani Battu</h1>
+
+ 
+
+    <div style="background-color: aqua;">Click on the locations to search
+
+        for treasure, beware the traps</div>
+
+    <div id="locations" style="background-color:rgb(51, 206, 36); color: rgb(73, 23, 252);">Number of locations checked is zero</div>
+
+    <div id="penalty" style="background-color: rgb(74, 250, 21); color: rgb(54, 10, 247);">Penalty is zero</div>
+
+    <div style="background-color:pink;">Click for help</div>
+
+    <div style="background-color: rgb(14, 244, 83); color: rgb(109, 10, 248);" id="help">Help
+
+        report</div>
+        <div class="row" style="padding-left: 150px;">
+
+            <div class="col-md-2"><img id="0" onclick="check(0)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="1" onclick="check(1)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="2" onclick="check(2)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="3" onclick="check(3)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="4" onclick="check(4)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+        </div>
+
+        <div class="row" style="padding-left: 150px;">
+
+            <div class="col-md-2"><img id="5" onclick="check(5)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="6" onclick="check(6)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="7" onclick="check(7)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="8" onclick="check(8)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="9" onclick="check(9)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+        </div>
+
+        <div class="row" style="padding-left: 150px;">
+
+            <div class="col-md-2"><img id="10" onclick="check(10)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="11" onclick="check(11)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="12" onclick="help()" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="13" onclick="check(13)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="14" onclick="check(14)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+        </div>
+
+        <div class="row" style="padding-left: 150px;">
+
+            <div class="col-md-2"><img id="15" onclick="check(15)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="16" onclick="check(16)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="17" onclick="check(17)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="18" onclick="check(18)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="19" onclick="check(19)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+        </div>
+
+        <div class="row" style="padding-left: 150px;">
+
+            <div class="col-md-2"><img id="20" onclick="check(20)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="21" onclick="check(21)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="22" onclick="check(22)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="23" onclick="check(23)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+            <div class="col-md-2"><img id="24" onclick="check(24)" src="location.jpg" alt="treasure"
+
+                    style="width: 100px;height:100px;"></div>
+
+        </div>
+
+        </div>
